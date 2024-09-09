@@ -3,6 +3,7 @@ const navLinks = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('.content-section');
 
 // Hide all sections except the first one initially (Eljohn Agojo)
+// To ensure that only one section is visible at any time
 sections.forEach((section, index) => {
   if (index !== 0) {
     section.classList.add('hidden');
